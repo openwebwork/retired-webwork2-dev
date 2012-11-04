@@ -1,6 +1,6 @@
 ################################################################################
 # WeBWorK Online Homework Delivery System
-# Copyright © 2000-2007 The WeBWorK Project, http://openwebwork.sf.net/
+# Copyright ï¿½ 2000-2007 The WeBWorK Project, http://openwebwork.sf.net/
 # 
 # This program is free software; you can redistribute it and/or modify it under
 # the terms of either: (a) the GNU General Public License as published by the
@@ -263,6 +263,7 @@ sub renderProblems {
 	my $showHints = $args{showHints} || 0;
 	my $showSolutions = $args{showSolutions} || 0;
 	my $problemNumber = $args{'problem_number'} || 1;
+	my $permissionLevel = $args{'permission_level'} || 10;
 	
 	my $key = $r->param('key');
 	
