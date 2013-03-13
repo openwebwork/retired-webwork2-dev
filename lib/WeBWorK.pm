@@ -375,7 +375,7 @@ sub dispatch($) {
 	my $cg_end = time;
 	my $cg_duration = $cg_end - $cg_start;
 	writeTimingLogEntry($ce, "[".$r->uri."]", sprintf("runTime = %.3f sec", $cg_duration)." ".$ce->{dbLayoutName}, "");
-	
+
 	debug("returning result: " . (defined $result ? $result : "UNDEF") . "\n");
 	return $result;
 }
