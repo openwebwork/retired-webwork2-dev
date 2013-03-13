@@ -26,6 +26,25 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
 <head>
+
+
+<!-- Code addition for Jquery Mathview, a little button add in file manager editor -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" /> 
+		
+		<script type="text/javascript" src="/webwork2_files/js/jquery-dev-1.8.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script> 
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+		
+		<script type="text/javascript" src="/webwork2_files/js/operations.js"></script>
+		<script type="text/javascript" src="/webwork2_files/js/jquery-mathview-1.0.0.js"></script>	
+		<script type="text/javascript">
+			$(function(){$('#equation').addMathEditor();});
+			function showMathEditorBar(){popUpEquation.setVisible(true);$('#equation').focus();}
+			$(function(){$('#openEqEditor').addMathEditor();});
+			$(function() {$( "#openEqEditor" ).draggable();});
+		</script>
+<!-- end code addition -->
+
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="<!--#url type="webwork" name="htdocs"-->/images/favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="<!--#url type="webwork" name="htdocs"-->/themes/math3/math3.css"/>
@@ -42,6 +61,25 @@
 <!--#endif-->
 <!--#if can="output_jquery_ui_CSS"-->
 	<link rel="stylesheet" type="text/css" href="<!--#url type="webwork" name="htdocs"-->/css/jquery-ui-1.8.18.custom.css"/>
+
+
+<!-- Code addition for Jquery Mathview, a little button add in file manager editor -->
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" /> 
+		
+		<script type="text/javascript" src="/webwork2_files/js/jquery-dev-1.8.2.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script> 
+		<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+		
+		<script type="text/javascript" src="/webwork2_files/js/operations.js"></script>
+		<script type="text/javascript" src="/webwork2_files/js/jquery-mathview-1.0.0.js"></script>	
+		<script type="text/javascript">
+			$(function(){$('#equation').addMathEditor();});
+			function showMathEditorBar(){popUpEquation.setVisible(true);$('#equation').focus();}
+			$(function(){$('#openEqEditor').addMathEditor();});
+			$(function() {$( "#openEqEditor" ).draggable();});
+		</script>
+<!-- end code addition --> 
+
 <!--#endif-->
 <!--#if can="output_JS"-->
 	<!--#output_JS-->

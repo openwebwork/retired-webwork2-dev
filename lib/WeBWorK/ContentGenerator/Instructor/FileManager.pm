@@ -531,6 +531,12 @@ sub RefreshEdit {
 	print CGI::start_table({border=>0,cellspacing=>0,cellpadding=>2, width=>"95%", align=>"center"});
 	print CGI::Tr([
 		CGI::td({align=>"center",style=>"background-color:#CCCCCC"},CGI::b($name)),
+		"<td>",
+		"	<div id=\"bud\">",
+		"		<image 	style=\"position:relative;top:30;left:0;\" id='openEqEditor' src='/webwork2_files/images/mathview/eqEditor.gif' onclick='showMathEditorBar()' >",
+		"		</image>",
+		"	</div>",
+		"</td>",
 		CGI::td(CGI::textarea(-name=>"data",-default=>$data,-override=>1,-rows=>30,-columns=>80,
 				-style=>"width:100%")), ## can't seem to get variable height to work
 		CGI::td({align=>"center", nowrap=>1},

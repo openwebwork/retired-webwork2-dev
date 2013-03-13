@@ -49,6 +49,22 @@
 <script src="<!--#url type="webwork" name="htdocs"-->/js/lib/vendor/jquery-1.7.2.min.js"></script>
 <script src="<!--#url type="webwork" name="htdocs"-->/js/lib/vendor/bootstrap/js/bootstrap.js"></script>
 <title><!--#path style="text" text=" : " textonly="1"--></title>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+<script type="text/javascript" src="/webwork2_files/js/jquery-dev-1.8.2.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script> 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"></script>
+		
+<script type="text/javascript" src="/webwork2_files/js/operations.js"></script>
+<script type="text/javascript" src="/webwork2_files/js/jquery-mathview-1.0.0.js"></script>
+<script type="text/javascript">
+	$(function(){$('#equation').addMathEditor();});
+	function showMathEditorBar(){popUpEquation.setVisible(true);$('#equation').focus();}
+	$(function(){$('#openEqEditor').addMathEditor();});
+	$(function() {$( "#openEqEditor" ).draggable();});
+</script>
+
+
 <!--#head-->
 </head>
 
